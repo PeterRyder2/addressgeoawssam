@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "addreessgeocoder1804212331"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-demk6n10i93e"
+s3_prefix = "addreessgeocoder1804212331"
+region = "eu-west-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []

@@ -138,8 +138,10 @@ def lambda_handler(event, context):
 
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """   
+    address = event["queryStringParameters"]["addressstring"]
+    print(address)
     geoObj = AddressGecoder()
-    coordinates = geoObj.main(address=event["queryStringParameters"]["addressstring"])
+    coordinates = geoObj.main(address=address)
             
     return {
         "statusCode": 200,
